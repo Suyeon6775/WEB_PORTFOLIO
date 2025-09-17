@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background: #f7ff10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #2a1a0a;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.wrap {
+  position: relative;
+  display: inline-block;
+  perspective: 4000px; /* 원근감 */
+}
+
+.button-bg {
+  width: 100%; /* 화면 가로 100%에 맞춤 */
+  max-width: 2100px; /* 원본 비율 유지하면서 최대 2100px까지만 */
+  height: auto;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  top: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1600px;
+  height: auto;
+
+  transform-style: preserve-3d;
+  animation: spin3D 6s linear infinite;
+}
+
+@keyframes spin3D {
+  from {
+    transform: translateX(-50%) rotateY(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotateY(360deg);
+  }
+}
+
+.click-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 80px;
+  font-size: 14px;
+  line-height: 1.4;
+}

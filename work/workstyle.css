@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center; /* 세로 중앙 */
+  height: 100vh; /* 뷰포트 전체 높이 */
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 100px;
+  color: white;
+  -webkit-text-stroke: 6px #332101;
+  letter-spacing: -5px;
+}
