@@ -19,7 +19,7 @@ body {
 
 .button-bg {
   width: 100%; /* 화면 가로 100%에 맞춤 */
-  height: auto;
+  height: 100%;
   display: block;
 }
 
