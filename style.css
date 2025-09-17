@@ -19,7 +19,6 @@ body {
 
 .button-bg {
   width: 100%; /* 화면 가로 100%에 맞춤 */
-  max-width: 2100px; /* 원본 비율 유지하면서 최대 2100px까지만 */
   height: auto;
   display: block;
 }
